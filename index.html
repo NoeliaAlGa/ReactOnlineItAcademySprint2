@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sass/main.css">
+    <link rel="icon" href="/Imagenes/favicon-32x32.png" type="image/x-icon/">
+    <title>Bootstrap 5 i SASS</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-white ">
+        <div class="container">
+            <a href="#" class="navbar-brand ms-3 ms-md-0"><img src="/Imagenes/logo-bookmark.svg"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel"><img class="imgMenu" src="./Imagenes/logo-bookmark-blanco.png"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link  text-center pe-md-3 tipoBold colorTextoHover" href="#featuresGo">FEATURES</a></li>
+                <li class="nav-item"><a class="nav-link tipoBold text-center ps-md-4 pe-md-3 colorTextoHover" href="#">PRICING</a></li>
+                <li class="nav-item"><a class="nav-link tipoBold text-center ps-md-4 pe-md-3 colorTextoHover" href="#">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link tipoBold text-center bg-Login rounded ps-md-4 pe-md-4 text-light botonCoralHover" href="#" tabindex="-1">LOGIN</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mt-md-5 mt-2">
+            <div class="col-md-6 col-12 col order-1 order-md-0 mt-5 medidaDiv">
+                <h1 class="tipoBold text-center text-md-start">A Simple Bookmark Manager</h1>
+                <p class="font-weight-light text-muted text-center text-md-start">A clean and simple interface to organice your favorite websites. 
+                    Open browser tab and see your sites load instantly. Try it for free.</p>
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <button type="button" class="btn btn-primary shadow mt-3 botonPrimaryHover">Get it on Chrome</button>
+                    <button type="button" class="btn btn-light shadow mt-3 ms-2 botonDarkHover">Get it on Firefox</button>
+                </div>    
+            </div>
+            <div class="medidaDiv col-md-6 position-relative mx-md-auto col-12 order-0 order-md-1 ms-3">
+                <img src="/Imagenes/illustration-hero.svg" class=".img-fluid position-absolute imagen d-flex justify-content-center">
+                <div class="figura position-absolute bg-primary "></div>   
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-center mt-md-5">
+        <div class="col-12 col-md-6">
+          <h3 class="tipoBold text-center text-md-start d-flex justify-content-center" id="featuresGo">FEATURES</h3>
+                <p class="font-weight-light text-muted text-center text-md-start d-flex justify-content-center justify-content-md-center">Our aim is to make it quick and easy for you to access your favourite websites.
+                  Your bookmarks sync between your devices so uou can access them os the go.
+                </p>
+        </div>
+        <div class="col-12 mt-3">
+          <ul class="nav nav-tabs border-0 d-flex justify-content-center tipoBold" id="myTab" role="tablist">
+            <li class="nav-item col-12 col-md-3 d-flex justify-content-center medidaBotoTab" role="presentation">
+              <button class="nav-link active border-0 colorTextoHover" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Simple Bookmarking</button>
+            </li>
+            <li class="nav-item col-12 col-md-3 d-flex justify-content-center medidaBotoTab" role="presentation">
+              <button class="nav-link border-0 colorTextoHover" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Speedy Searching</button>
+            </li>
+            <li class="nav-item col-12 col-md-3 d-flex justify-content-center medidaBotoTab" role="presentation">
+              <button class="nav-link border-0 colorTextoHover" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Easy Sharing</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              <div class="container-fluid"> 
+                <div class="row">
+                  <div class="col-12 col-md-6 d-flex justify-content-center mt-4">
+                    <img src="./Imagenes/illustration-features-tab-1.svg" class="imagenTab">
+                    <div class="figuraIzquierda position-absolute bg-primary"></div>
+                  </div>
+                  <div class="col-12 col-md-6 mt-5 p-3 medidaDiv">
+                    <h3 class="tipoBold text-center text-md-start" id="featuresGo">Bookmark in one click</h3>
+                    <p class="font-weight-light text-muted text-center text-md-start d-flex justify-content-center justify-content-md-center">Organize your bookmarks however you like.
+                      Our simple drag-and-drop interface gives you complete control over how you manager you favorite sites.
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                      <button type="button" class="btn btn-primary shadow mt-1">More Info</button>
+                    </div>
+                  </div>   
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <div class="container-fluid"> 
+                <div class="row">
+                  <div class="col-12 col-md-6 d-flex justify-content-center mt-4">
+                    <img src="./Imagenes/illustration-features-tab-2.svg" class="imagenTab">
+                    <div class="figuraIzquierda position-absolute bg-primary"></div>
+                  </div>
+                  <div class="col-12 col-md-6 mt-5 p-3 medidaDiv">
+                    <h3 class="tipoBold text-center text-md-start" id="featuresGo">Intelligent search</h3>
+                    <p class="font-weight-light text-muted text-center text-md-start d-flex justify-content-center justify-content-md-center">Our powerful search feature will help you find saved sites in no time at all.
+                      No need to trawl through all of your bookmarks.
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                      <button type="button" class="btn btn-primary shadow mt-1">More Info</button>
+                    </div>
+                  </div>   
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+              <div class="container-fluid"> 
+                <div class="row">
+                  <div class="col-12 col-md-6 d-flex justify-content-center mt-4">
+                    <img src="./Imagenes/illustration-features-tab-3.svg" class="imagenTab">
+                    <div class="figuraIzquierda position-absolute bg-primary"></div>
+                  </div>
+                  <div class="col-12 col-md-6 mt-5 p-3 medidaDiv">
+                    <h3 class="tipoBold text-center text-md-start" id="featuresGo">Share your bookmarks</h3>
+                    <p class="font-weight-light text-muted text-center text-md-start d-flex justify-content-center justify-content-md-center">
+                      Easily share your bookmarks and collections with others.
+                      Create a shareable link that you can send at the click of a button.
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                      <button type="button" class="btn btn-primary shadow mt-1">More Info</button>
+                    </div>
+                  </div>   
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row d-flex justify-content-center mt-md-5">
+                <div class="col-12 col-md-6">
+                  <h3 class="tipoBold text-center text-md-start d-flex justify-content-center" id="featuresGo">Download the extension</h3>
+                  <p class="font-weight-light text-muted text-center text-md-start d-flex justify-content-center justify-content-md-center">
+                      We've got more browsers in the pipeline. Please do let us krow if you've got a favorite you'd like us te priorize.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid d-flex justify-content-center medidaDivCard m-3">
+              <div class="row">
+                <div class="col-12 col-md-4 mb-3 " >
+                  <div class="card" style="width: 18rem;">
+                    <div class="text-center mt-4">
+                      <img src="./Imagenes/logo-chrome.svg" class="imgCard" alt="Chrome">
+                    </div>
+                    <div class="card-body">
+                      <h3 class="tipoBold text-center text-md-start d-flex justify-content-center" id="featuresGo">Add to Chrome</h3>
+                      <p class="card-text text-center text-black-50">Minimum version 62</p>
+                      <div class="lineaPuntos"></div>
+                      <button type="button" class="btn btn-primary shadow mt-1 medidaBotoCard mt-3 botonPrimaryHover">Add & Install Extension</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <div class="card" style="width: 18rem;">
+                    <div class="text-center mt-4">
+                      <img src="./Imagenes/logo-firefox.svg" class="imgCard" alt="Firefox">
+                    </div>
+                    <div class="card-body">
+                      <h3 class="tipoBold text-center text-md-start d-flex justify-content-center " id="featuresGo">Add to Firefox</h3>
+                      <p class="card-text text-center text-black-50">Minimum version 55</p>
+                      <div class="lineaPuntos"></div>
+                      <button type="button" class="btn btn-primary shadow mt-1 medidaBotoCard mt-3 botonPrimaryHover">Add & Install Extension</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3" >
+                  <div class="card" style="width: 18rem;">
+                    <div class="text-center mt-4">
+                      <img src="./Imagenes/logo-opera.svg" class="imgCard" alt="Opera">
+                    </div>
+                    <div class="card-body">
+                      <h3 class="tipoBold text-center text-md-start d-flex justify-content-center" id="featuresGo">Add to Opera</h3>
+                      <p class="card-text text-center text-black-50">Minimum version 46</p>
+                      <div class="lineaPuntos"></div>
+                      <button type="button" class="btn btn-primary shadow mt-1 medidaBotoCard mt-3 botonPrimaryHover">Add & Install Extension</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-center mt-md-5 mt-5">
+        <div class="col-12 col-md-6">
+          <h3 class="tipoBold text-center text-md-start d-flex justify-content-center" id="featuresGo">Frequently Asked Questions</h3>
+          <p class="font-weight-light text-muted text-center text-md-start d-flex justify-content-center justify-content-md-center">
+              Here are some of our FAQs. If you have any others questions you'd like answered please feel free to email us.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6 col-12">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed tipoBold colorTextoHover" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  What is Bookmark?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed tipoBold colorTextoHover" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  How can i request a new browser?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed tipoBold colorTextoHover" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Is there a mobile app?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed tipoBold colorTextoHover" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  What about other Chromium browsers?
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row m-3">
+        <div class="col-12 d-flex justify-content-center">
+          <button type="button" class="btn btn-primary shadow mt-1 mt-3">More info</button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-center mt-5 bg-primary text-light">
+      <div class="row mt-5 mb-5 d-flex justify-content-center">
+        <div class="col-md-6 col-12">
+          <p class="text-uppercase text-center">35.000 * already joined</p>
+          <h3 class="tipoBold text-center  text-center" id="featuresGo">Stay up-to-date with what we're doing</h3>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <form class="form-row g-3 was-validated needs-validation d-md-flex" novalidate>
+            <div class="col-md-8 col-12 position-relative d-md-flex">
+              <label for="email" class="form-label"></label>
+              <input type="email" name="email" class="form-control item" id="email" required placeholder="Enter your email address">
+            </div>
+            <div class="col-md-4 col-12">
+              <button class="btn bg-secondary text-light inputBoton  mt-2 mt-md-0 ms-md-2 botonCoralHover" type="submit">Contact Us</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar  navbar-dark bg-dark d-flex">
+      <div class="container-fluid d-flex justify-content-center col-md-8">
+        <img src="./Imagenes/logo-bookmark-footer.svg" class="imgMidaFotter me-3">
+        <button class="btn navbar-brand mb-0 h1 textFooter col-12 col-md-1 colorTextoHover">FEATURE</button>
+        <button class="btn navbar-brand mb-0 h1 textFooter col-12 col-md-1 colorTextoHover">PRICING</button>
+        <button class="btn navbar-brand mb-0 h1 textFooter col-12 col-md-1 colorTextoHover">CONTACT</button>
+      </div>
+      <div class="col-md-4 col-12 d-flex justify-content-center mt-2 mt-md-0">
+        <img class="me-3" src="./Imagenes/icon-facebook.svg" alt="Facebook">
+        <img src="./Imagenes/icon-twitter.svg" alt="Facebook">
+      </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+</html>
